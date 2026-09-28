@@ -19,3 +19,7 @@ typedef struct
     double *v_star; /* Predictor buffer */
 } MacGrid;
 
+int mac_grid_allocate(MacGrid *grid, size_t nx, size_t ny, double lx, double ly);
+void mac_grid_free(MacGrid *grid);
+
+#endif
